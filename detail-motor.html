@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detail Motor - Honda Vario 160</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-red-600 w-full text-white fixed -top-1 rounded-br-xl rounded-bl-xl z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">SalesMotor.id</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:text-yellow-300">Home</a>
+        <a href="motor.html" class="hover:text-yellow-300">Motor</a>
+        <a href="#kontak" class="hover:text-yellow-300">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="py-10 bg-gray-100 mt-16">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-10 px-4">
+      <div class="md:w-1/2">
+        <img id="changeable-image" src="assets/beat deluxe black.webp" alt="Honda Vario 160" class="rounded shadow-lg">
+      </div>
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold mb-2">Honda Vario 160</h2>
+        <p class="text-xl text-red-600 font-semibold mb-4">Harga OTR: Rp26.800.000</p>
+        <h3 class="text-2xl font-bold mb-2">Warna</h3>
+        <div id="warna-varian" class="flex flex-wrap mb-4 gap-3">
+          <button id="btn1" onclick="changeImage('black');selectBtn(this)" class="kategori-btn p-2 bg-gray-900 rounded-full border-2 border-black"></button>
+          <button id="btn2" onclick="changeImage('green');selectBtn(this)" class="kategori-btn p-2 bg-green-600 rounded-full border-2 border-transparent"></button>
+          <button id="btn3" onclick="changeImage('silver');selectBtn(this)" class="kategori-btn p-2 bg-gray-400 rounded-full border-2 border-transparent"></button>
+          <button id="btn4" onclick="changeImage('blue');selectBtn(this)" class="kategori-btn p-2 bg-blue-600 rounded-full border-2 border-transparent"></button>
+        </div>
+        <a href="whatsappBtn" target="_blank" class="bg-green-500 text-white px-5 py-2 rounded hover:bg-green-600 inline-block">Hubungi Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simulasi Kredit -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-4 text-center">Simulasi Kredit</h3>
+      <div class="overflow-x-auto bg-gray-100 p-6 rounded shadow">
+        <table class="min-w-full table-auto border border-gray-200">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="px-4 py-2 border text-left text-sm font-semibold text-gray-600">DP</th>
+              <th class="px-4 py-2 border text-left text-sm font-semibold text-gray-600">Tenor</th>
+              <th class="px-4 py-2 border text-left text-sm font-semibold text-gray-600">Cicilan/Bulan</th>
+              <th class="px-4 py-2 border text-left text-sm font-semibold text-gray-600">Total Pembayaran</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border text-sm text-gray-700">Rp 2.000.000</td>
+              <td class="px-4 py-2 border text-sm text-gray-700">12 Bulan</td>
+              <td class="px-4 py-2 border text-sm text-gray-700">Rp 1.200.000</td>
+              <td class="px-4 py-2 border text-sm text-gray-700">Rp 16.400.000</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border text-sm text-gray-700">Rp 3.000.000</td>
+              <td class="px-4 py-2 border text-sm text-gray-700">18 Bulan</td>
+              <td class="px-4 py-2 border text-sm text-gray-700">Rp 950.000</td>
+              <td class="px-4 py-2 border text-sm text-gray-700">Rp 20.100.000</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border text-sm text-gray-700">Rp 4.000.000</td>
+              <td class="px-4 py-2 border text-sm text-gray-700">24 Bulan</td>
+              <td class="px-4 py-2 border text-sm text-gray-700">Rp 850.000</td>
+              <td class="px-4 py-2 border text-sm text-gray-700">Rp 24.400.000</td>
+            </tr>
+            <!-- Tambahkan baris lain sesuai kebutuhan -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spesifikasi Motor -->
+  <section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-4 text-center">Spesifikasi Motor</h3>
+      <div class="max-w-2xl mx-auto">
+        <table class="w-full text-left border">
+          <tbody>
+            <tr><th class="p-2 border font-medium">Mesin</th><td class="p-2 border">160cc, 4-langkah, eSP+</td></tr>
+            <tr><th class="p-2 border font-medium">Transmisi</th><td class="p-2 border">Otomatis, V-Matic</td></tr>
+            <tr><th class="p-2 border font-medium">Kapasitas Tangki</th><td class="p-2 border">5,5 liter</td></tr>
+            <tr><th class="p-2 border font-medium">Rem</th><td class="p-2 border">CBS / ABS</td></tr>
+            <tr><th class="p-2 border font-medium">Ban</th><td class="p-2 border">Tubeless depan & belakang</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fitur & Keunggulan -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6 text-center">Fitur & Keunggulan</h3>
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <h4 class="font-semibold mb-2">✅ Smart Key System</h4>
+          <p>Tidak perlu kunci fisik, lebih aman dan praktis.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <h4 class="font-semibold mb-2">✅ Bagasi Luas 18L</h4>
+          <p>Muatan lebih banyak, cocok untuk harian maupun perjalanan jauh.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <h4 class="font-semibold mb-2">✅ Panel Digital</h4>
+          <p>Tampilan informasi digital modern dan mudah dibaca.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <h4 class="font-semibold mb-2">✅ Irit BBM</h4>
+          <p>Efisiensi bahan bakar terbaik di kelasnya dengan teknologi eSP+</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-12 bg-gray-100 text-center">
+    <h3 class="text-2xl font-bold mb-2">Tertarik Membeli?</h3>
+    <p class="mb-4">Klik tombol di bawah untuk menghubungi kami via WhatsApp dan konsultasi lebih lanjut!</p>
+    <a id="whatsappBtn" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600 font-semibold">Hubungi Sales Sekarang</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-red-600 text-white py-6 mt-10">
+    <div class="container mx-auto text-sm">
+      <div class="flex flex-warp justify-between">
+        <div class="text-2xl font-bold">SalesMotor.id</div>
+        <div>
+          <div class="flex gap-5">
+            <a href="">Beranda</a>
+            <a href="">Motor</a>
+            <a href="">Kontak</a>
+          </div>
+        </div>
+      </div>
+      <div class="my-5 flex flex-col gap-2">
+        <h2>Contact us</h2>
+        <p>sales.motor@gmail.com</p>
+        <p>Jl.Bima sakti No.4</p>
+        <p>+62 899 8273 7238</p>
+      </div>
+      <hr>
+      <p class="flex justify-end mt-3">&copy; 2025 SalesMotor.id - Semua hak Cipta dilindungi</p>
+    </div>
+  </footer>
+
+  <!-- Script Simulasi Kredit -->
+  <script src="assets/script.js"></script>
+
+</body>
+</html>

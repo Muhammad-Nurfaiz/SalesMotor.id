@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sales Motor - Beranda</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed -top-1 w-full bg-red-600 text-white shadow-lg rounded-br-xl rounded-bl-xl z-50">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center p-4 space-y-3 md:space-y-0">
+      <h1 class="text-2xl font-bold">SalesMotor.id</h1>
+      <nav class="space-x-4">
+        <a href="#" class="hover:text-yellow-300 transition duration-300">Home</a>
+        <a href="motor.html" class="hover:text-yellow-300 transition duration-300">Motor</a>
+        <a href="#kontak" class="hover:text-yellow-300 transition duration-300">Kontak</a>
+      </nav>
+      <a href="#kontak" class="bg-white text-red-600 px-4 py-2 rounded hover:bg-yellow-300 font-semibold transition duration-300">Hubungi Sales</a>
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="bg-white mt-16 py-12">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-6 px-4">
+      <div class="md:w-1/2">
+        <h2 class="text-4xl font-bold mb-4">Temukan Motor Impianmu dengan Mudah</h2>
+        <p class="mb-6">Layanan cepat, banyak pilihan motor baru & bekas, siap antar ke rumah Anda!</p>
+        <a href="#katalog" class="bg-red-600 text-white px-6 py-3 rounded hover:bg-red-700 font-semibold transition duration-300">Lihat Motor</a>
+      </div>
+      <div class="md:w-1/2">
+        <img src="assets/2024 Honda BeAT Street.jfif" alt="Gambar Motor" class="w-full rounded-lg shadow-lg transform transition duration-500 hover:scale-105" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Keunggulan -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-6">Kenapa Pilih Kami?</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+        <div class="p-6 shadow rounded border">
+          <h4 class="text-xl font-semibold mb-2">Banyak Pilihan</h4>
+          <p>Lebih dari 100 motor dari berbagai merek tersedia untuk Anda.</p>
+        </div>
+        <div class="p-6 shadow rounded border">
+          <h4 class="text-xl font-semibold mb-2">Harga Terbaik</h4>
+          <p>Dapatkan harga promo & cicilan ringan untuk semua model.</p>
+        </div>
+        <div class="p-6 shadow rounded border">
+          <h4 class="text-xl font-semibold mb-2">Pelayanan Cepat</h4>
+          <p>Hubungi kami, dan motor impian bisa langsung diantar ke rumah.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Katalog Motor -->
+  <section id="katalog" class="py-12 bg-gray-50">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-6">Motor Terbaru</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:scale-105">
+          <img src="assets/beat deluxe black.webp" alt="Motor 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold">Honda Beat 2024</h4>
+            <p class="text-sm text-gray-500 mb-3">Harga: Rp18.000.000</p>
+            <a href="detail-motor.html?motor=beatdeluxe" class="mt-2 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Detail</a>
+          </div>
+        </div>
+        <!-- Tambah 2 kartu lagi -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:scale-105">
+          <img src="assets/nmax/nmax-hitam.webp" alt="Motor 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold">Yamaha NMax 2024</h4>
+            <p class="text-sm text-gray-500 mb-3">Harga: Rp32.000.000</p>
+            <a href="detail-motor.html?motor=nmax" class="mt-2 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Detail</a>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:scale-105">
+          <img src="assets/gsxr/gsxr-hitam.webp" alt="Motor 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold">Suzuki GSX-R150</h4>
+            <p class="text-sm text-gray-500 mb-3">Harga: Rp35.000.000</p>
+            <a href="detail-motor.html?motor=gsxr150" class="mt-2 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-6">Apa Kata Pelanggan?</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+        <div class="bg-gray-100 p-6 rounded shadow transform transition duration-300 hover:scale-105">
+          <p class="italic">"Pelayanan cepat, motor langsung sampai rumah! Terima kasih!"</p>
+          <p class="mt-2 font-bold">– Budi, Surabaya</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded shadow transform transition duration-300 hover:scale-105">
+          <p class="italic">"Proses kreditnya gampang, sales-nya ramah dan informatif."</p>
+          <p class="mt-2 font-bold">– Siti, Malang</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-12 bg-gray-50">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-4">Hubungi Sales Sekarang</h3>
+      <p class="mb-6">Klik tombol di bawah untuk langsung menghubungi kami via WhatsApp!</p>
+      <a href="https://wa.me/6281234567890" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600 font-semibold">Chat via WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-red-600 text-white py-6 mt-10">
+    <div class="container mx-auto text-sm px-4">
+      <div class="flex flex-wrap justify-between">
+        <div class="text-2xl font-bold">SalesMotor.id</div>
+        <div>
+          <div class="flex gap-5">
+            <a href="#" class="hover:text-yellow-300 transition duration-300">Beranda</a>
+            <a href="#" class="hover:text-yellow-300 transition duration-300">Motor</a>
+            <a href="#" class="hover:text-yellow-300 transition duration-300">Kontak</a>
+          </div>
+        </div>
+      </div>
+      <div class="my-5 flex flex-col gap-2">
+        <h2>Contact us</h2>
+        <p>sales.motor@gmail.com</p>
+        <p>Jl.Bima sakti No.4</p>
+        <p>+62 899 8273 7238</p>
+      </div>
+      <hr>
+      <p class="flex justify-end mt-3">&copy; 2025 SalesMotor.id - Semua hak Cipta dilindungi</p>
+    </div>
+  </footer>
+</body>
+</html>
